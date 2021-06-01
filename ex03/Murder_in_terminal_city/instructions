@@ -12,7 +12,7 @@ OOOOOOOOOOOOOOO'a'            LINE                         |OOOOOOOOOOOOOy
 OOOOOOOOOOOOOO''              MURDERS                      aa`OOOOOOOOOOOP
 OOOOOOOOOOOOOOb,..                                          `@aa``OOOOOOOh
 OOOOOOOOOOOOOOOOOOo                                           `@@@aa OOOOo
-OOOOOOOOOOOOOOOOOOO|                                             @@@ OOOOe
+OOOOOOOOOOOOOOOOOOO|                                             @@@ OOOOewhodunit
 OOOOOOOOOOOOOOOOOOO@                               aaaaaaa       @@',OOOOn
 OOOOOOOOOOOOOOOOOOO@                        aaa@@@@@@@@""        @@ OOOOOi
 OOOOOOOOOO~~ aaaaaa"a                 aaa@@@@@@@@@@""            @@ OOOOOx
@@ -23,17 +23,25 @@ OOOOOOO'  `@@a               @@a@@   @@""           a@@   a     |@@@ OOOO3
 
 
 There's been a murder in Terminal City, and TCPD needs your help.
+Il y a eu un meurtre à Terminal City et TCPD a besoin de votre aide.
 
 To figure out whodunit, go to the 'mystery' subdirectory and start working from there.
+Pour trouver l'enigme, va dans le dossier "mystery" et commence a travailler de la.
 
 You'll want to start by collecting all the clues at the crime scene (the 'crimescene' file).
+Tu dois commencer par collecter tous les indices sur la scene de crime (le dossier "crimescene")
 
 The officers on the scene are pretty meticulous, so they've written down EVERYTHING in their officer reports.
+Les agents sur les lieux sont assez méticuleux, ils ont donc tout noté dans leurs rapports d'officiers.
 
 Fortunately the sergeant went through and marked the real clues with the word "CLUE" in all caps.
+Heureusement, le sergent est passé et a marqué les vrais indices avec le mot «CLUE» en majuscules.
 
 If you get stuck, open one of the hint files (from the CL, type 'cat hint1', 'cat hint2', etc.).
+Si vous êtes bloqué, ouvrez l'un des fichiers d'indices (à partir du CL, tapez «cat hint1», «cat hint2», etc.).
 
 To get started on how to use the command line, open cheatsheet.md or cheatsheet.pdf (from the command line, you can type 'nano cheatsheet.md').
+Pour commencer à utiliser la ligne de commande, ouvrez cheatsheet.md ou cheatsheet.pdf (à partir de la ligne de commande, vous pouvez taper «nano cheatsheet.md»).
 
 Don't use a text editor to view any files except these instructions, the cheatsheet, and hints.
+N'utilisez pas d'éditeur de texte pour afficher des fichiers à l'exception de ces instructions, the cheatsheet, and hints.

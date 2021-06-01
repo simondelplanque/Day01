@@ -1,0 +1,53 @@
+J'ai commencé par faire un grep CLUE crimescene
+
+CLUE: Footage from an ATM security camera is blurry but shows that the perpetrator is a tall male, at least 6'.
+CLUE: Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA, Delta SkyMiles, the local library, and the Museum of Bash History. The cards are totally untraceable and have no name, for some reason.
+CLUE: Questioned the barista at the local coffee shop. He said a woman left right before they heard the shots. The name on her latte was Annabel, she had blond spiky hair and a New Zealand accent.
+
+Le suspect fait parti de 4 "club", on le sait via le portefeuille retrouvé.
+J'ai fait un grep -f des abonnés de ces 4 clubs pour voir qui il y avait en commun.
+On sait également que le suspect est un homme, j'ai donc supprimé les femmes de la liste :
+
+Sonata Raif
+Jacqui Maher
+Liangliang Miller
+Matt Waite
+Dalibor Vidal
+Jeremy Bowers
+Mike Bostock
+Andrei Masna
+Didier Munoz
+Nikolaus Milatz
+Krystian Pen
+Deron Estanguet
+Augustin Lozano
+Aldo Nicolas
+Brian Boyer
+
+On recherche Annabel, qui pourrait avoir des infos via un grep Annabel people :
+
+Annabel Sun	F	26	Hart Place, line 40
+Oluwasegun Annabel	M	37	Mattapan Street, line 173
+Annabel Church	F	38	Buckingham Place, line 179
+Annabel Fuglsang	M	40	Haley Street, line 176
+
+On sait que c'est une femme, on va donc aller à Hart place et Buckingham place.
+
+Aprés avoir fait la recherche sur leurs adresses, nous avons le numéro de leurs interviews : #47246024 - #699607.
+
+699607 : However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
+
+On recherche donc une Honda Bleue, conduite par un homme, de 6 pied, avec une plaque commancant par L337 et finissant par 9.
+
+On regarde ensuite via le fichier des vehicules. J'ai fait 3 grep -a -b, un pour la plaque, puis la couleur, puis le vehicule pour avoir une liste de 6 voitures.
+
+Ensuite j'ai regardé via le fichier des suspects.
+Voici le tueur :
+
+1142-1851-License Plate L3375A9
+1169:1873-Make: Honda
+1186-1885:Color: Blue
+1203-1897-Owner: Jeremy Bowers
+1229-1918-Height: 6'1"
+1247-1931-Weight: 204 lbs
+
